@@ -1,0 +1,58 @@
+@media only screen and (max-width:599px) {
+    
+.piePagina{
+    width: 100%;
+    background-color:rgb(182, 253, 180);
+  }
+  .grupoDos{
+    @extend %flexRow;
+    background-color:rgb(182, 253, 180);
+    padding: 15px 10px;
+    text-align: center;
+    color: #000000;}
+  
+  .grupoUno{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+
+    .box
+      figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+        img{
+          width: 250px;}
+
+      h3{
+        color: #000000;
+        margin-bottom: 25px;
+        font-size: 20px;}
+
+      p{
+        color: #000000;
+        margin-bottom: 10px;}
+
+    .redSocial a{
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: #D3E4CD;
+      margin-right: 10px;
+      background-color:hsl(174, 72%, 56%);
+      text-align: center;
+      transition: all 300ms ease;
+
+        &:hover{
+        background-color: #00ffff;}
+      }
+}
