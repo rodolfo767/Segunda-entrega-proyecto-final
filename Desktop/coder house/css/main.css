@@ -15,7 +15,6 @@ header {
   background-color: #b6fdb4;
   width: 100%;
   width: 100%;
-  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,6 +172,13 @@ p {
   transition: all 300ms ease; }
   .redSocial a:hover {
     background-color: #00ffff; }
+
+@media only screen and (max-width: 599px) {
+  .grupoUno {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
 
 .botonWhatsApp img {
   width: 70px;
